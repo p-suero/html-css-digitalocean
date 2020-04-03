@@ -22,6 +22,7 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
+/** default button **/
 .btn-default.btn {
     color: #0069ff;
     border: 1px solid #0069ff;
@@ -36,6 +37,7 @@ a:focus, a:hover {
     border-color: transparent;
 }
 
+/** primary button **/
 .btn-primary.btn {
     background-color: #0069ff;
     color: white;
@@ -51,6 +53,7 @@ a:focus, a:hover {
     border: none;
 }
 
+/** info button **/
 .btn.btn-info {
     color: #031b4e;
     background: #f2f8ff;
@@ -293,7 +296,7 @@ section h2 + p {
 }
 
 .btn-default.btn {
-    margin: 6px 15px 6px 0;
+    margin: 6px 20px 6px 0;
 
 }
 
@@ -399,7 +402,7 @@ form .btn-info img {
 
 /* SELETTORI MAIN*/
 
-/** sezione client **/
+/** selettori sezione client **/
 #client h4 {
     opacity: 0.4;
 }
@@ -418,7 +421,7 @@ form .btn-info img {
     font-weight: 600;
 }
 
-/** sezione offer **/
+/** selettori sezione offer **/
 #offer li {
     font-size: 17px;
     font-weight: 500;
@@ -441,7 +444,7 @@ form .btn-info img {
     color: #031b4e;
 }
 
-/** sezione demonstration **/
+/** selettori sezione demonstration **/
  p.sub-image {
     margin-top: 30px;
     line-height: 1.7em;
@@ -452,7 +455,7 @@ form .btn-info img {
     background-color: #0069ff;
 }
 
-/** sezione skill **/
+/** selettori sezione skill **/
 #skill .small-box {
     margin-bottom: 50px;
 }
@@ -476,8 +479,7 @@ form .btn-info img {
 }
 
 
-/** potentiality **/
-
+/** selettori sezione potentiality **/
 section#potentiality {
     background-image: url(img/potentiality-bk.svg);
     background-color: #031b4e;
@@ -524,7 +526,7 @@ section#potentiality {
     color: #005fe6;
 }
 
-/** sezione feedback **/
+/** selettori sezione feedback **/
 #feedback .point-selector {
     margin-top: 25px;
 }
@@ -533,6 +535,8 @@ section#potentiality {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* MEDIA QUERY */
 
 /* spostato il break-point rispetto a quello di default in bootstrap dell' intero header */
 @media screen and (min-width: 768px) {
@@ -615,7 +619,8 @@ section#potentiality {
         display: none;
     }
 }
-/* media query per gli over-size angle */
+
+/* media query per gli over-size angle posti ai lati delle immagini */
 @media screen and (min-width: 750px) {
 
     .slide-container:before,
