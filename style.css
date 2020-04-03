@@ -77,7 +77,7 @@ a:focus, a:hover {
     background-color: white;
 }
 
-.bk-color-transparent{
+.bk-color-transparent {
     background-color: transparent;
 }
 
@@ -85,6 +85,13 @@ a:focus, a:hover {
     background-color: #f3f5f9;
 }
 
+.link {
+    color: #0069ff;
+}
+
+.link:hover {
+    color: #005fe6;
+}
 /* selettore etichetta */
 .label {
     background-color: #00d7d2;
@@ -136,11 +143,11 @@ section h2 + p {
 }
 
 .slide-container:before {
-    content: "\f104";
+    content: "\f053";
     font-family: "Font Awesome 5 Free";
     display: none;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: rgba(3,27,78,0.4);
     position: absolute;
     top: 50%;
@@ -149,16 +156,17 @@ section h2 + p {
 }
 
 .slide-container:after {
-    content: "\f105";
+    content: "\f054";
     font-family: "Font Awesome 5 Free";
     display: none;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: #031b4e;
     position: absolute;
     top: 50%;
     right: -8%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 /* point-selector per lo scorrimento immagini*/
@@ -324,7 +332,7 @@ section h2 + p {
 
 .form-container {
     padding: 30px 0;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .form-control {
@@ -387,7 +395,6 @@ form .btn-info img {
 
 .jumbotron p.h6 span {
     text-decoration: underline;
-    color: #0069ff;
 }
 
 /* SELETTORI MAIN*/
@@ -407,7 +414,6 @@ form .btn-info img {
 }
 
 #client a {
-    color: #0069ff;
     font-size: 15px;
     font-weight: 600;
 }
@@ -436,7 +442,7 @@ form .btn-info img {
 }
 
 /** sezione demonstration **/
-p.sub-image {
+ p.sub-image {
     margin-top: 30px;
     line-height: 1.7em;
     color: rgba(3,27,78,.7);
@@ -466,9 +472,9 @@ p.sub-image {
 }
 
 #skill a {
-    color: #0069ff;
     font-weight: 600;
 }
+
 
 /** potentiality **/
 
@@ -499,21 +505,18 @@ section#potentiality {
 
 #potentiality table tr td:first-child {
     color: white;
-    font-weight: 600;
-    width: 20%;
+    font-weight: 500;
 }
 
 #potentiality table tr td:nth-child(2) {
     color: white;
     opacity: 0.6;
-    width: 60%;
 }
 
 #potentiality table tr td:nth-child(3) {
     font-weight: 500;
     color: #00d7d2;
     cursor: pointer;
-    width: 20%;
     text-align: right;
 }
 
@@ -521,6 +524,15 @@ section#potentiality {
     color: #005fe6;
 }
 
+/** sezione feedback **/
+#feedback .point-selector {
+    margin-top: 25px;
+}
+
+#feedback h2 + p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* spostato il break-point rispetto a quello di default in bootstrap dell' intero header */
 @media screen and (min-width: 768px) {
