@@ -380,6 +380,16 @@ form .btn-info img {
     margin-right: 10px;
 }
 
+.jumbotron p.h6 {
+    font-size: 12px;
+    color: rgba(3,27,78,.7);
+}
+
+.jumbotron p.h6 span {
+    text-decoration: underline;
+    color: #0069ff;
+} 
+
 /* SELETTORI MAIN*/
 
 /** sezione client **/
