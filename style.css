@@ -104,8 +104,8 @@ a:focus, a:hover {
 /* stile titolo e sottotitolo sezioni */
 section h2 {
     color: #031b4e;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     line-height: 1.25;
 }
 
@@ -388,7 +388,7 @@ form .btn-info img {
 .jumbotron p.h6 span {
     text-decoration: underline;
     color: #0069ff;
-} 
+}
 
 /* SELETTORI MAIN*/
 
@@ -453,7 +453,7 @@ p.sub-image {
 
 #skill i {
     font-size: 30px;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
     color: #0069ff;
 }
 
@@ -470,7 +470,56 @@ p.sub-image {
     font-weight: 600;
 }
 
+/** potentiality **/
 
+section#potentiality {
+    background-image: url(img/potentiality-bk.svg);
+    background-color: #031b4e;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#potentiality table {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+#potentiality table tr {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+#potentiality table tr:nth-child(6) {
+    border-bottom: none;
+}
+
+#potentiality table td {
+    padding: 10px 10px 10px;
+}
+
+#potentiality table tr td:first-child {
+    color: white;
+    font-weight: 600;
+    width: 20%;
+}
+
+#potentiality table tr td:nth-child(2) {
+    color: white;
+    opacity: 0.6;
+    width: 60%;
+}
+
+#potentiality table tr td:nth-child(3) {
+    font-weight: 500;
+    color: #00d7d2;
+    cursor: pointer;
+    width: 20%;
+    text-align: right;
+}
+
+#potentiality table tr td:nth-child(3):hover {
+    color: #005fe6;
+}
 
 
 /* spostato il break-point rispetto a quello di default in bootstrap dell' intero header */
