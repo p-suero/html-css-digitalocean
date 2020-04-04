@@ -24,8 +24,8 @@
                                     <span class="label text-uppercase">
                                         New
                                     </span>
-                                    <a href="#">
-                                        Working on something related to COVID-19? DigitalOcean would like to help ❯
+                                    <a class="angle-right" href="#">
+                                        Working on something related to COVID-19? DigitalOcean would like to help
                                     </a>
                                 </p>
                             </div>
@@ -65,9 +65,9 @@
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <div class="hamburgher-menu">
+                                    <i class="fas fa-bars"></i>
+                                </div>
                             </button>
                             <div class="logo-container">
                                 <img id="first-logo" src="img/logo.svg" alt="">
@@ -84,12 +84,8 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#">
+                                    <a class="angle-down" href="#">
                                     Products
-                                    <span>
-                                        <i class=" angle-down fas fa-angle-down">
-                                        </i>
-                                    </span>
                                     </a>
                                 </li>
                                 <li>
@@ -108,12 +104,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a class="angle-down" href="#">
                                         Community
-                                        <span>
-                                            <i class="angle-down fas fa-angle-down">
-                                            </i>
-                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -267,8 +259,8 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-center">
-                            <a class="link"  href="#">
-                                See business solution ❯
+                            <a class="link angle-right"  href="#">
+                                See business solution
                             </a>
                         </div>
                     </div>
@@ -343,6 +335,8 @@
                                                 With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.
                                             </p>
                                         </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-xs-12 col-sm-6 col-md-6 small-box">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" aria-hidden="true" class="www-Icon www-Icon--xlarge"><defs><linearGradient x1="11.123%" y1="109.271%" x2="80.386%" y2="3.434%" id="aprebu"><stop stop-color="#0069FF" stop-opacity=".6" offset="0%"></stop><stop stop-color="#0069FF" stop-opacity="0" offset="100%"></stop></linearGradient><linearGradient x1="11.231%" y1="109.543%" x2="80.289%" y2="3.243%" id="bprebu"><stop stop-color="#0069FF" stop-opacity=".6" offset="0%"></stop><stop stop-color="#0069FF" stop-opacity="0" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#aprebu)" fill-rule="nonzero" opacity=".3" d="M24.93 12.96V.9H8.73v12.06z" transform="translate(3.5 2)"></path><path stroke="#0069FF" stroke-width="2" opacity=".3" d="M28.414 2.876v12.06h-16.2V2.876z"></path><path fill="#FFFFFF" fill-rule="nonzero" d="M32.59 7.593v18.09H8.11V7.593z"></path><path fill="url(#bprebu)" fill-rule="nonzero" d="M29.07 23.76V5.67H4.59v18.09z" transform="translate(3.5 2)"></path><path stroke="#0069FF" stroke-width="2" d="M32.59 7.593v18.09H8.11V7.593z"></path><path stroke="#120078" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" d="M3.522 37.985v-25.2h33.66v25.2z"></path><g stroke="#120078" stroke-width="2"><path d="M20.33 20.81v9.09M15.74 25.4h9.18"></path></g></g>
                                             </svg>
@@ -385,9 +379,16 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                            <div class="slide-container">
-                                 <img class="img-responsive center-block" src="img/demonstration-img.jpg" alt="Software User Screen">
-                             </div>
+                            <div class="slide-container carousel">
+                                <!-- ho usato due div per gli angoli al posto di un after/before per permettere all' hover di funzionare solo quando il puntatore è sulla singola freccia -->
+                                <div class="carousel-left hidden-xs">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                                <img class="img-responsive center-block" src="img/demonstration-img.jpg" alt="Software User Screen">
+                                <div class="carousel-right hidden-xs">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -427,8 +428,8 @@
                                     <p>
                                         More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.
                                     </p>
-                                    <a class="link" href="#">
-                                        Security ❯
+                                    <a class="link angle-right" href="#">
+                                        Security
                                     </a>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 small-box">
@@ -439,8 +440,8 @@
                                     <p>
                                         Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.
                                     </p>
-                                    <a class="link" href="#">
-                                        Pricing ❯
+                                    <a class="link angle-right" href="#">
+                                        Pricing
                                     </a>
                                 </div>
                             </div>
@@ -455,8 +456,8 @@
                                     <p>
                                         Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.
                                     </p>
-                                    <a class="link" href="#">
-                                        Support ❯
+                                    <a class="link angle-right" href="#">
+                                        Support
                                     </a>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6 small-box">
@@ -467,8 +468,8 @@
                                     <p>
                                         Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.
                                     </p>
-                                    <a class="link" href="#">
-                                        Compliance ❯
+                                    <a class="link angle-right" href="#">
+                                        Compliance
                                     </a>
                                 </div>
                             </div>
@@ -498,18 +499,22 @@
                                             Amsterdam, Netherlands
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-uppercase">
-                                            ams3
+                                            asm3
                                         </td>
                                         <td>
                                             Amsterdam, Netherlands
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -517,10 +522,12 @@
                                             blr1
                                         </td>
                                         <td>
-                                            Bangalore,India
+                                            Bangalore, India
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -528,10 +535,12 @@
                                             fra1
                                         </td>
                                         <td>
-                                            Frankfurt,Germany
+                                            Frankfurt, Germany
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -539,10 +548,12 @@
                                             lon1
                                         </td>
                                         <td>
-                                            London,UK
+                                            London, UK
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr class="brd-none">
@@ -550,10 +561,12 @@
                                             nyc1
                                         </td>
                                         <td>
-                                            New York,USA
+                                            New York, USA
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -570,7 +583,9 @@
                                             New York,USA
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -581,7 +596,9 @@
                                             New York,USA
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -592,7 +609,9 @@
                                             San Francisco,USA
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -603,7 +622,9 @@
                                             San Francisco,USA
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -614,7 +635,9 @@
                                             Singapore
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr class="brd-none">
@@ -625,7 +648,9 @@
                                             Toronto,Canada
                                         </td>
                                         <td>
-                                            Test speed ❯
+                                            <a class="angle-right" href="#">
+                                                Test speed
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -656,7 +681,14 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                             <div class="slide-container">
-                                 <img class="img-responsive center-block" src="img/feedback-img.png" alt="Feedback">
+                                <!-- ho usato due div per gli angoli al posto di un after/before per permettere all' hover di funzionare solo quando il puntatore è sulla singola freccia -->
+                                <div class="carousel-left hidden-xs">
+                                    <i class="fas fa-chevron-left"></i>
+                                </div>
+                                <img class="img-responsive center-block" src="img/feedback-img.png" alt="Feedback">
+                                <div class="carousel-right hidden-xs">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
                              </div>
                         </div>
                     </div>
