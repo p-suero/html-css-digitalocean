@@ -4,12 +4,14 @@ body {
     color: rgb(3,27,78);
 }
 
-section {
+section,
+footer {
     padding: 60px 0;
 }
 
 section .container-fluid,
-#header-bottom .jumbotron .container-fluid {
+#header-bottom .jumbotron .container-fluid,
+footer .container-fluid {
     max-width: 1170px;
 }
 
@@ -209,11 +211,11 @@ section h2 + p {
     border: 0;
     border-bottom: 1px solid #e5e8ed;
     border-radius: 0;
-    font-size: 14px;
+    font-size: 11px;
     color: #5b6987;
     margin: 0;
     min-height: auto;
-    padding: 8px 0;
+    padding: 5px 0;
     font-weight: 600;
 }
 
@@ -246,7 +248,7 @@ section h2 + p {
 
 /** header bottom **/
 #header-bottom {
-    padding-top: 47px;
+    padding-top: 41px;
     background-color: #0248ff;
     z-index: 3;
 }
@@ -270,7 +272,8 @@ section h2 + p {
     color: inherit;
     font-size: 13px;
     font-weight: 600;
-    padding: 0 15px;
+    padding: 0;
+    margin: 0 15px;
 }
 
 #header-bottom .navbar-default .navbar-nav > li > a:hover {
@@ -308,7 +311,7 @@ section h2 + p {
 }
 
 .btn-default.btn {
-    margin: 6px 20px 6px 0;
+    margin: 6px 15px 6px 0;
 }
 
 .navbar-default .navbar-toggle:focus,
@@ -560,7 +563,7 @@ section#potentiality {
 #account-creation {
     background-color: #0248ff;
     background-image: url(img/account-creation-bg.jpg);
-    background-position-x: -100px bottom;
+    background-position-x: -100px ;
 }
 
 #account-creation h3 {
@@ -582,6 +585,62 @@ section#potentiality {
     background-color: hsla(0,0%,100%,.8);
     border: none;
     color: #0069ff;
+}
+
+
+/* SELETTORI SEZIONE FOOTER */
+
+footer {
+    background-color: #010e28;
+}
+
+.footer-border-bottom {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 60px;
+}
+
+/** footer top **/
+footer #footer-top h5 {
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+footer #footer-top li {
+    opacity: 0.5;
+    font-size: 13px;
+    padding: 3px 0;
+}
+
+footer #footer-top li:hover {
+    opacity: 1;
+}
+
+/** footer-bottom **/
+footer #footer-bottom {
+    padding: 10px 0;
+}
+
+footer #footer-bottom img {
+    width: 7%;
+    display: inline-block;
+}
+
+footer #footer-bottom p {
+    font-size: 10px;
+    display: inline-block;
+    padding: 12.60px 10px;
+    opacity: 0.5;
+}
+
+footer #footer-bottom li {
+    opacity: 0.5;
+    padding: 18px 8px;
+}
+
+footer #footer-bottom li:hover {
+    opacity: 1;
 }
 
 /* MEDIA QUERY */
