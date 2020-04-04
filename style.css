@@ -1,6 +1,7 @@
 /* LAYOUT GENERALE */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    color: rgb(3,27,78);
 }
 
 section {
@@ -131,7 +132,6 @@ a:focus, a:hover {
 
 /** stile titolo e sottotitolo sezioni **/
 section h2 {
-    color: #031b4e;
     font-size: 32px;
     font-weight: 700;
     line-height: 1.25;
@@ -139,9 +139,9 @@ section h2 {
 
 section h2 + p {
     font-size: 20px;
-    color: rgba(3,27,78,.7);
     padding-top: 20px;
     margin-bottom: 80px;
+    opacity: 0.7;
 }
 
 /** small-box **/
@@ -151,11 +151,11 @@ section h2 + p {
 
 .small-box h4 + p {
     font-size: 16px;
-    margin-top: 16px;
     line-height: 23px;
     font-weight: 500;
-    color: rgba(3,27,78,.7);
+    margin-top: 16px;
     margin-bottom: 50px;
+    opacity: 0.7;
 }
 
 /** angoli laterali over-size **/
@@ -165,16 +165,15 @@ section h2 + p {
 
 .carousel-left {
     font-size: 30px;
-    color: rgba(3,27,78,0.4);
     position: absolute;
     top: 50%;
     left: -8%;
     transform: translateY(-50%);
+    opacity: 0.4;
 }
 
 .carousel-right {
     font-size: 30px;
-    color: #031b4e;
     position: absolute;
     top: 50%;
     right: -8%;
@@ -211,17 +210,17 @@ section h2 + p {
     border-bottom: 1px solid #e5e8ed;
     border-radius: 0;
     font-size: 14px;
+    color: #5b6987;
     margin: 0;
     min-height: auto;
     padding: 8px 0;
-    color: #5b6987;
     font-weight: 600;
 }
 
 .navbar-announcement {
     float: left;
     padding: 5px 15px;
-    color: #5b6987;
+    color: inherit;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -288,7 +287,6 @@ section h2 + p {
     object-fit: contain;
     cursor: pointer;
     padding-left: 15px;
-
 }
 
 .logo-container svg {
@@ -323,7 +321,6 @@ section h2 + p {
     color: white;
     opacity: 0.5;
 }
-
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
@@ -416,7 +413,7 @@ form .btn-info img {
 
 .jumbotron p.h6 {
     font-size: 12px;
-    color: rgba(3,27,78,.7);
+    opacity: 0.7;
 }
 
 .jumbotron p.h6 span {
@@ -471,7 +468,7 @@ form .btn-info img {
  p.sub-image {
     margin-top: 30px;
     line-height: 1.7em;
-    color: rgba(3,27,78,.7);
+    opacity: 0.7;
 }
 
 .point-selector span:first-of-type {
@@ -557,6 +554,34 @@ section#potentiality {
 #feedback h2 + p span {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/** sezione account creation **/
+#account-creation {
+    background-color: #0248ff;
+    background-image: url(img/account-creation-bg.jpg);
+    background-position-x: -100px bottom;
+}
+
+#account-creation h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#account-creation .btn.btn-default {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#account-creation .btn.btn-default:hover {
+    background-color: hsla(0,0%,100%,.8);
+    border: none;
+    color: #0069ff;
 }
 
 /* MEDIA QUERY */
