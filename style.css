@@ -70,7 +70,6 @@ a:focus, a:hover {
 .btn-primary.btn:hover {
     background-color: #1633ff;
     color: white;
-    border: none;
 }
 
 /** info button **/
