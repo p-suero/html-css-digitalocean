@@ -1,4 +1,5 @@
-/* LAYOUT GENERALE */
+/* i selettori seguono l'ordine della pagina html */
+
 body {
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     color: rgb(3,27,78);
@@ -9,12 +10,14 @@ footer {
     padding: 60px 0;
 }
 
+/** set container **/
 section .container-fluid,
 #header-bottom .jumbotron .container-fluid,
 footer .container-fluid {
     max-width: 1170px;
 }
 
+/** reset stile link **/
 a {
    color: inherit;
    text-decoration: none;
@@ -365,7 +368,7 @@ section h2 + p {
     padding: 20px 15px;
 }
 
-form h3 {
+.jumbotron form h3 {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -408,7 +411,7 @@ form h3 {
     display: inline-block;
 }
 
-form .btn-info img {
+.jumbotron form .btn-info img {
     width: 20px;
     margin-right: 10px;
 }
@@ -467,13 +470,13 @@ form .btn-info img {
 }
 
 /** selettori sezione demonstration **/
- p.sub-image {
+#demonstration p.sub-image {
     margin-top: 30px;
     line-height: 1.7em;
     opacity: 0.7;
 }
 
-.point-selector span:first-of-type {
+#demonstration .point-selector span:first-of-type {
     background-color: #0069ff;
 }
 
@@ -502,7 +505,7 @@ form .btn-info img {
 
 
 /** selettori sezione potentiality **/
-section#potentiality {
+#potentiality {
     background-image: url(img/potentiality-bk.svg);
     background-color: #031b4e;
     background-size: cover;
@@ -718,11 +721,11 @@ footer #footer-bottom li:hover {
         padding-bottom: 120px;
     }
 
-    #first-logo {
+    header #first-logo {
         display: inline-block;
     }
 
-    #second-logo {
+    header #second-logo {
         display: none;
     }
 }
