@@ -506,7 +506,7 @@ section h2 + p {
 
 /** selettori sezione potentiality **/
 #potentiality {
-    background-image: url(img/potentiality-bk.svg);
+    background-image: url(../img/potentiality-bk.svg);
     background-color: #031b4e;
     background-size: cover;
     background-repeat: no-repeat;
@@ -564,7 +564,7 @@ section h2 + p {
 /** sezione account creation **/
 #account-creation {
     background-color: #0248ff;
-    background-image: url(img/account-creation-bg.jpg);
+    background-image: url(../img/account-creation-bg.jpg);
     background-position-x: -100px ;
 }
 
@@ -677,7 +677,7 @@ footer #footer-bottom li:hover {
 
     #header-bottom {
         background-color: #0248ff;
-        background-image: url(img/jumbotron-bg.jpg);
+        background-image: url(../img/jumbotron-bg.jpg);
         background-size: cover;
         background-position: center;
     }
